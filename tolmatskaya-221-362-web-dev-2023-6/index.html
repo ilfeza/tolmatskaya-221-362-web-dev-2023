@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Rampart+One&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h1>Возведение в степень</h1>   
+            <input type="number" name="num" id="num" placeholder="Число">
+            <input type="number" name="pow" id="pow" placeholder="Степень">
+            <p id="calculatePow">Ответ = </p>
+            <button class="btn" onclick="calculatePow(document.querySelector( '#num' ).value, document.querySelector( '#pow' ).value)">Вычислить</button>
+        </section>
+
+        <section class="container">
+            <h1>Нахождение НОД</h1>   
+            <input type="number" name="a" id="a" placeholder="Число 1">
+            <input type="number" name="b" id="b" placeholder="Число 2">
+            <p id="calculateGcd">Ответ = </p>
+            <button class="btn" onclick="calculateGcd(document.querySelector( '#a' ).value, document.querySelector( '#b' ).value)">Вычислить</button>
+        </section>
+
+        <section class="container">
+            <h1>Наименьшая цифра</h1>   
+            <input type="number" name="number" id="number" placeholder="Число">
+            <p id="calculateMinDigitd">Ответ = </p>
+            <button class="btn" onclick="calculateMinDigitd(document.querySelector( '#number' ).value)">Вычислить</button>
+        </section>
+
+        <section class="container">
+            <h1>Pluralization</h1>   
+            <input type="number" name="noun" id="noun" placeholder="Количество элементов">
+            <p id="calculatePluralizeRecords">Ответ = </p>
+            <button class="btn" onclick="calculatePluralizeRecords(document.querySelector( '#noun' ).value)">Вычислить</button>
+        </section>
+
+        <section class="container">
+            <h1>Числа Фибоначчи</h1>   
+            <input type="number" name="fibb" id="fibb" placeholder="Количество элементов">
+            <p id="calculateFibb">Ответ = </p>
+            <button class="btn" onclick="calculateFibb(document.querySelector( '#fibb' ).value)">Вычислить</button>
+        </section>
+    </main>
+    
+</body>
+
+</html>

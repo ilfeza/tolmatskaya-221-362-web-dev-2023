@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Rampart+One&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <h1>Авторизация</h1>
+            <div class="container">
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    <p><b>Логин:</b><br>
+                        <input type="text" maxlength="25" size="40" name="login" placeholder="Логин">
+                    </p>
+                    <p><b>Пароль:</b><br>
+                        <input type="password" maxlength="25" size="40" name="password" placeholder="Пароль">
+                    </p>
+                    <input type="checkbox"><b>Запомнить меня</b><br>
+                    <input class="btn" type="submit" value="Войти">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Толмацкая Ирина</p>
+            <p>ilffeza@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

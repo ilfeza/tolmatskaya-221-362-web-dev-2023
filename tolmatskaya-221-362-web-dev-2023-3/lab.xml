@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<General>
+    <Colonel name="A"></Colonel>
+    <Colonel name="B">
+        <Captain name="A">
+            <Sergeant name="A"></Sergeant>
+            <Sergeant name="B">
+                <Private name="A"></Private>
+                <Private name="B"></Private>
+            </Sergeant>
+        </Captain>
+        <Captain name="B"></Captain>
+        <Captain name="C"></Captain>
+    </Colonel>
+</General>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<General>
+    <Colonel_A></Colonel_A>
+    <Colonel_B>
+        <Captain_A>
+            <Sergeant_A></Sergeant_A>
+            <Sergeant_B>
+                <Private_A></Private_A>
+                <Private_B></Private_B>
+            </Sergeant_B>
+        </Captain_A>
+        <Captain_B></Captain_B>
+        <Captain_C></Captain_C>
+    </Colonel_B>
+</General>

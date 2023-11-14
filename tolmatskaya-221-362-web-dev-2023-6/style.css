@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+.decoration {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(226, 240, 249);
+    font-family: 'Noto Sans Display', 'Rampart One', 'Rubik Mono One', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    color: rgb(226, 240, 249);
+    text-decoration: none; 
+}
+
+
+main{
+    font-family: 'Noto Sans Display', 'Rampart One', 'Rubik Mono One', sans-serif;
+    font-size: 16px;
+    color: rgb(30, 158, 190);
+    flex: 1;
+    
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(30, 158, 190);
+    color: rgb(229, 227, 226);
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    text-align: right;
+}
+.menu li {
+    margin-right: 50px;
+}
+
+
+.title {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Rampart One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1000%;
+    color: rgb(30, 158, 190);
+    top: 90px;
+    position: absolute;
+    left: 28%;
+
+}
+
+.cute img {
+    width: 20%;
+    height: auto;
+    border-radius: 500px;
+}
+
+.row {
+    color: rgb(30, 158, 190);
+    display: flex;
+    align-items: center;
+}
+
+p {
+    width: 70%;
+    margin: 0;
+}
+
+table {
+    color: rgb(30, 158, 190);
+    margin: 0 auto; /* Центрирование таблицы */
+    border-collapse: collapse;
+    border: 2px solid rgb(30, 158, 190); /* Границы таблицы */
+    margin-top: 40px; /* Отступ сверху */
+    margin-bottom: 40px;
+}
+
+th, td {
+    border: 2px solid rgb(30, 158, 190); /* Границы ячеек */
+    padding: 8px; /* Отступы внутри ячеек для лучшего визуального восприятия */
+}
+
+.footer {
+    scroll-padding-block-start: 120px;
+    background-color: rgb(30, 158, 190);
+    color: rgb(229, 227, 226);
+ 
+    margin-top: 20px;
+    
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 158, 190);
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+form {
+    text-align: center;
+}
+
+form p {
+    text-align: left;
+}
+
+.btn {
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    border: 1px solid rgb(30, 158, 190);
+    border-radius: 5px;
+    color: rgb(30, 158, 190);
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color:rgb(30, 158, 190);
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87vh; 
+}
+
+form select {
+    width: 100%;
+    
+    margin-bottom: 15px;
+}
+
+.box {
+    white-space: nowrap; /* Предотвращает перенос на новую строку */
+    overflow-x: auto; /* Добавляет горизонтальную прокрутку, если изображений слишком много */
+    text-align: center;
+}
+  
+.filters__img {
+    display: inline-block; /* Делает изображения блочными, чтобы они выровнялись в одну строку */
+    margin-right: 10px; /* Добавляет небольшой отступ между изображениями */
+    margin-top: 40px; /* Отступ сверху */
+}
+  
+.filters__img img {
+    max-width: 200px; /* Устанавливает максимальную ширину изображения на 500px */
+    height: auto; /* Сохраняет соотношение сторон для изображений */
+}
+  
+h1{
+    margin-bottom: 30px;
+}

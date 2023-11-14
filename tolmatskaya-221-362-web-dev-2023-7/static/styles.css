@@ -1,0 +1,93 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.calc-container {
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    height: 40px;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.screen span {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+}
+
+.buttons {
+    width: 80%;
+    height: 100px;
+    display: flex;
+}
+
+.digits {
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.other {
+    width: 25%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Изменено с "grid-template-columns: 1fr;" на "grid-template-columns: repeat(2, 1fr);". */
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.key {
+    width: 100%;
+    height: 100%;
+    /* Удалите следующую строку, чтобы сделать кнопки квадратными */
+    /* border-radius: 50%; */
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+.key:hover {
+    transform: scale(1.1);
+}
+
+.key:active {
+    transform: scale(0.9);
+}
+
+.operation {
+    background-color: #ff9900;
+}
+
+.result {
+    background-color: #4fd74fab;
+}
+
+.clear {
+    background-color: #cc0000;
+}
