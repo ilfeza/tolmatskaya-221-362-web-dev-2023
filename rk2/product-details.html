@@ -28,24 +28,21 @@
 
             <div id="productId"></div>
 
-           <!-- Добавьте этот div, чтобы поместить данные о продукте -->
+         
             <div id="flower-info"></div>
 
             <script>
-                // Получаем URL страницы
                 var url = window.location.href;
             
-                // Ищем символ ?, который обозначает начало параметров в URL
                 var paramIndex = url.indexOf('?');
                 
                 if (paramIndex !== -1) {
                     var params = new URLSearchParams(url.substring(paramIndex));
                     var productId = params.get('id');
                     
-                    
-                    // Вызываем функцию insertFlowerData() с передачей productId для вставки данных
+                   
                     document.addEventListener("DOMContentLoaded", function() {
-                    // Call the function when the DOM is ready
+                  
                     insertFlowerData(productId-1);
                     });
                 }
