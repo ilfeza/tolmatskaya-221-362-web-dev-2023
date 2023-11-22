@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Цветы для Вас</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div class="form">
+            <h1>Авторизация</h1>
+            <div class="container">
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data" onsubmit="showComplaintLink(event)">
+                    <p><b>Логин:</b><br>
+                        <input type="text" maxlength="25" size="40" name="login" placeholder="Логин">
+                    </p>
+                    <p><b>Пароль:</b><br>
+                        <input type="password" maxlength="25" size="40" name="password" placeholder="Пароль">
+                    </p>
+                    <input type="checkbox" id="remember">
+                  
+                    <label for="remember"><b>Запомнить меня</b></label><br>
+                    <input class="btn" type="submit" value="Войти">
+                </form>
+                <p id="complaintLink" style="display: none;">Оставьте жалобу или предложение <a href="feedback.html">Оставить</a></p> 
+            </div>
+        </div>
+    </main>
+    
+  
+    <footer>
+        <p>&copy; 2023 Цветы для Вас</p>
+    </footer>
+
+</body>
+</html>

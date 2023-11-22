@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали продукта</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer>
+        
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Цветы для Вас</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <div class="product-details">
+         
+
+            <div id="productId"></div>
+
+           <!-- Добавьте этот div, чтобы поместить данные о продукте -->
+            <div id="flower-info"></div>
+
+            <script>
+                // Получаем URL страницы
+                var url = window.location.href;
+            
+                // Ищем символ ?, который обозначает начало параметров в URL
+                var paramIndex = url.indexOf('?');
+                
+                if (paramIndex !== -1) {
+                    var params = new URLSearchParams(url.substring(paramIndex));
+                    var productId = params.get('id');
+                    
+                    
+                    // Вызываем функцию insertFlowerData() с передачей productId для вставки данных
+                    document.addEventListener("DOMContentLoaded", function() {
+                    // Call the function when the DOM is ready
+                    insertFlowerData(productId-1);
+                    });
+                }
+            </script>
+            
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Цветы для Вас</p>
+    </footer>
+
+</body>
+</html>

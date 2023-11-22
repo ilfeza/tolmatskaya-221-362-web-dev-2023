@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Цветы для Вас</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h1>Обратная связь</h1>
+        <div class="container">
+            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                <p><b>ФИО</b><br>
+                    <input type="text" name="name" maxlength="25" size="40" placeholder="ФИО">
+                </p>
+                <p><b>Email</b><br>
+                    <input type="text" name="email" maxlength="25" size="40" placeholder="email">
+                </p>
+                <p><b>Откуда узнали о нас?</b></p>
+                    <p><input name="how find" type="radio" value="friend">От друга</p>
+                    <p><input name="how find" type="radio" value="internet" checked>Из интернета</p>
+                <p><b>Тип обращения</b></p>
+                <select name="category" size="1">
+                    <option disabled>Выберите тип</option>
+                    <option selected value="1">Обращение</option>
+                    <option selected value="2">Жалоба</option>
+                </select>
+                <p><b>Текст сообщения</b></p>
+                <p><textarea rows="10" cols="45" name="text"></textarea></p>
+                <p><input type="file" name="file">
+                </p>
+                <input type="checkbox"><b>Даю согласие на обработку персональных данных</b><br>
+                <input class="btn" type="submit" value="Отправить">
+            </form>
+    </main>
+    
+  
+    <footer>
+        <p>&copy; 2023 Цветы для Вас</p>
+    </footer>
+
+</body>
+</html>

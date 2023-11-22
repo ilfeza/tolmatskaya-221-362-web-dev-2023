@@ -113,7 +113,7 @@ body {
 }
 
 .search-form {
-    margin: 40px 0;
+    margin: 40px 0px 0;
     display: flex;
 }
 
@@ -145,7 +145,7 @@ body {
     color: black;
 }
 
-/* Стили для выпадающего списка */
+
 .autocomplete-dropdown {
     position: absolute;
     background-color: #fff;
@@ -164,18 +164,18 @@ body {
     background-color: #f2f2f2;
   }
   
-  /* Подгоняем выпадающий список к полю поиска */
+
   .search-form {
     position: relative;
   }
   
-  /* Чтобы список перекрывал основной текст */
+
   .container {
     position: relative;
     z-index: 1;
   }
   
-  /* Стили для выделения строки серым при наведении */
+
   .autocomplete-option:hover {
     background-color: #f2f2f2;
     color: #444;
