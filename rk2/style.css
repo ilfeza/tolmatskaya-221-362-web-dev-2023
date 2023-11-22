@@ -159,3 +159,28 @@ header img {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+#slideshow {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .slides {
+    display: none;
+  
+    height: auto;
+}
+.slides {
+    width: 300px; 
+    height: 300px; 
+
+      
+    align-items: center;
+    transition: opacity 2s ease; 
+    text-align: center; 
+ 
+  }
+  
+  
