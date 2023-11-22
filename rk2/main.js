@@ -58,7 +58,7 @@ function showComplaintLink(event) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
+    const form = document.querySelector('form1');
 
     form.addEventListener('submit', function (event) {
         event.preventDefault(); 
